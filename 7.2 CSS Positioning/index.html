@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+    .blue-box {
+      background-color: blue;
+      height: 300px;
+      width: 500px;
+      position: absolute; /*relative to the top corner of the web page*/
+      top: 50px;
+      left: 50px;
+    }
+
+    .yellow-rounded-box {
+      background-color: yellow;
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      top: 100px;
+      left: 50px;
+      position: fixed; /*relative to the it's normal position in the flow*/
+    }
+
+    .red-circle {
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; /*creates a circle*/
+      position: absolute; /*relative to its nearest ancestor - the yellow box*/
+      top: 150px;
+      left: 250px;
+      
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="yellow-rounded-box">
+      <div class="red-circle">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+/* Write your code here: */
+
+h1, h2 { /*Group selector: selector, selector {css rule}*/
+    color: blueviolet;
+}
+
+/*Parent > child selector {CSS rule} only if the nesting is limited to only 1 level*/
+ .box > p {
+    color: firebrick;
+ }
+
+ /*Descendent selector: selector selector (multi children)*/
+ .box li{
+    color: blue;
+ }
+
+ /*Chain selector: all selectors together without spaces, start with element selector*/
+ li.done {
+    color: green;
+ }
+
+ /*Combine combiners: Combine all selector combinations anyway*/
+ul > p.done {
+    font-size: .8rem;
+}

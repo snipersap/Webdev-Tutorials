@@ -1,0 +1,24 @@
+/* Don't change the existing CSS. */
+#outer-box { /*id is more specific than class */
+  background-color: purple;
+}
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+.white-text { /*class is more specific than element, even in a position above the element*/
+  color: white;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-box { /*position matters when class is the same*/
+  background-color: red;
+}
+
